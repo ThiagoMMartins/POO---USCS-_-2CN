@@ -1,0 +1,30 @@
+package uscs;
+/**
+*
+* @author thiago.martins_uscso
+*/
+public class Empregado {
+public String nome;
+public String endereço;
+public double valor_hora;
+public int qntd_horas;
+
+public Empregado(String nome, String endereço, double valor_hora, int qntd_horas,
+double Salario) {
+this.nome = nome;
+this.endereço = endereço;
+this.valor_hora = valor_hora;
+this.qntd_horas = qntd_horas;
+}
+public ImprimeEmpregado(){
+System.out.printf(nome);
+System.out.printf(endereço);
+System.out.println(valor_hora);
+System.out.println(qntd_horas);
+}
+public CalculaSalario(){
+double salario = (qntd_horas*valor_hora);
+}
+public ImprimeEmpregado(){
+System.out.println(nome);
+System.out.println(Salario);
