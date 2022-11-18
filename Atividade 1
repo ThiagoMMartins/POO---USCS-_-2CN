@@ -1,0 +1,70 @@
+
+THIAGO MADELLA MARTINS - ATIVIDADE 1 -PROGRAMAÇÃO ORIENTADA A OBJETOS
+
+
+package USCS; 
+
+public class Empregado  {
+   
+    
+    public int codEmpregado ;
+    public double salario;
+    public String nome;
+    public String cargo;
+
+    public Empregado(int codEmpregado, double salario, String nome, String cargo) {
+        this.codEmpregado = codEmpregado;
+        this.salario = salario;
+        this.nome = nome;
+        this.cargo = cargo;
+    }
+    public Empregado(){
+    }
+    public void ImprimeEmpregado(){
+    System.out.println(codEmpregado);
+    System.out.println(salario);
+    System.out.println(cargo);
+    System.out.println(nome);
+    System.out.println(TotalEmpregados);
+    }
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package USCS;
+
+public class TesteEmpregado {
+    
+    public static void main(String[] args) {
+       Empregado e1 = new Empregado(1232,15400.00,"Paulo Silva","Gerente Financeiro");
+      
+       e1.ImprimeEmpregado();
+       
+       Empregado e2 = new Empregado(4567,10700.00,"Ana Paula", "Analista Senior");
+       e2.ImprimeEmpregado();
+       TotalEmpregados(“2”);    	
+    }
+}
+
+
