@@ -1,0 +1,115 @@
+Atividade 2 - THIAGO MADELLA MARTINS
+-PROGRAMAÇÃO ORIENTADAA OBJETOS
+
+package uscs;
+public class Teclado {
+private String Numero_Serie;
+private String Fabricate;
+private String Cor;
+public Teclado(String Numero_Serie, String Fabricate, String Cor) {
+this.Numero_Serie = Numero_Serie;
+this.Fabricate = Fabricate;
+this.Cor = Cor;
+}
+public void ImprimeTeclado(){
+System.out.printf("Teclado:");
+System.out.println(Numero_Serie);
+System.out.println(Fabricate);
+System.out.println(Cor)
+}
+
+package uscs;
+/**
+*
+* @author thiago.martins_uscso
+*/
+public class Mouse {
+private String Numero_Serie;
+private String Fabricate;
+private String Cor;
+public Mouse(String Numero_Serie, String Fabricate, String Cor) {
+this.Numero_Serie = Numero_Serie;
+this.Fabricate = Fabricate;
+this.Cor = Cor;
+}
+public void ImprimeMouse(){
+System.out.println(Numero_Serie);
+System.out.println(Fabricate);
+System.out.println(Cor);
+}
+}
+
+package uscs;
+/**
+*
+* @author thiago.martins_uscso
+*/
+public class Monitor {
+private String Numero_Serie;
+private String Fabricate;
+private String Cor;
+public Monitor(String Numero_Serie, String Fabricate, String Cor) {
+this.Numero_Serie = Numero_Serie;
+this.Fabricate = Fabricate;
+this.Cor = Cor;
+}
+public void ImprimeMonitor(){
+System.out.println(Numero_Serie);
+System.out.println(Fabricate);
+System.out.println(Cor);
+}
+}
+
+package uscs;
+/**
+*
+* @author thiago.martins_uscso
+*/
+public class Gabinete {
+private String Numero_Serie;
+private String Fabricate;
+private String Cor;
+public Gabinete(String Numero_Serie, String Fabricate, String Cor) {
+this.Numero_Serie = Numero_Serie;
+this.Fabricate = Fabricate;
+this.Cor = Cor;
+}
+public void ImprimeGabinete(){
+System.out.println(Numero_Serie);
+System.out.println(Fabricate);
+System.out.println(Cor);
+}
+}
+
+package uscs;
+/**
+*
+* @author thiago.martins_uscso
+*/
+public class Computador {
+private String Numero_Serie;
+
+public Computador(String Numero_Serie) {
+this.Numero_Serie = Numero_Serie;
+}
+public void ImprimeComputador(){
+System.out.println(Numero_Serie);
+}
+}
+
+package uscs;
+
+public class TesteComputador {
+public static void main(String[] args) {
+Teclado t = new Teclado("1232","Logitech","preto");
+t.ImprimeTeclado();
+Monitor mon = new Monitor("AFB876","Samsung","preto");
+mon.ImprimeMonitor();
+Gabinete g = new Gabinete("4587HHY","Logitech","preto");
+g.ImprimeGabinete();
+Mouse m = new Mouse("HGY6654","Microsoft","preto");
+m.ImprimeMouse();
+Computador cp = new Computador("76TRDE35");
+cp.ImprimeComputador();
+}
+}
